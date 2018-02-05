@@ -1,6 +1,6 @@
 {
-  "name": "work_out",
-  "plural": "work_outs",
+  "name": "exercise",
+  "plural": "exercises",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -9,18 +9,27 @@
   "relations": {
     "orders": {
       "type": "hasMany",
-      "model": "exercise",
-      "foreignKey": "id_wo"
+      "model": "rep",
+      "foreignKey": "idex"
     }},
   "properties": {
-    "date_wo": {
-      "type": "date",
+    "idexercise": {
+      "id": true,
+      "type": "number",
       "required": true
     },
     "id_wo": {
       "type": "number",
-      "id": true,
       "required": true
+    },
+    "ex_name": {
+      "type": "string"
+    },
+    "ex_muscle": {
+      "type": "string"
+    },
+    "ex_numser": {
+      "type": "number"
     }
   },
   "validations": [],

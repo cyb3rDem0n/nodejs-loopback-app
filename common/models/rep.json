@@ -1,29 +1,30 @@
 {
-  "name": "work_out",
-  "plural": "work_outs",
+  "name": "rep",
+  "plural": "reps",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
-  "relations": {
-    "orders": {
-      "type": "hasMany",
-      "model": "exercise",
-      "foreignKey": "id_wo"
-    }},
   "properties": {
-    "date_wo": {
-      "type": "date",
-      "required": true
-    },
-    "id_wo": {
+    "idrep": {
       "type": "number",
       "id": true,
       "required": true
+    },
+    "idex": {
+      "type": "number",
+      "required": true
+    },
+    "rep_weight": {
+      "type": "number"
+    },
+    "rep_num": {
+      "type": "number"
     }
   },
   "validations": [],
+  "relations": {},
   "acls": [],
   "methods": {}
 }

@@ -38,5 +38,13 @@
   "work_out": {
     "dataSource": "mysql_db",
     "public": true
+  },
+  "exercise": {
+    "dataSource": "mysql_db",
+    "public": true
+  },
+  "rep": {
+    "dataSource": "mysql_db",
+    "public": true
   }
 }
