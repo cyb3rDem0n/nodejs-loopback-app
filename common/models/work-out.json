@@ -1,0 +1,24 @@
+{
+  "name": "work_out",
+  "plural": "work_outs",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date_wo": {
+      "type": "date",
+      "required": true
+    },
+    "id_wo": {
+      "type": "number",
+      "required": true,
+      "id": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
